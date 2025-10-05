@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Life Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>🌟 Welcome to Vibe Campus</h1>
+    <p>Your one-stop student hub</p>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Our Campus</h2>
+    <p>Our campus is vibrant with academic, cultural, and sports activities. This portal gives you quick access to facilities, events, and FAQs.</p>
+  </section>
+
+  <!-- Facilities -->
+  <section id="facilities">
+    <h2>Campus Facilities</h2>
+    <div class="cards">
+      <div class="card">📚 Library</div>
+      <div class="card">🏠 Hostel</div>
+      <div class="card">💻 Computer Labs</div>
+      <div class="card">⚽ Sports Ground</div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events">
+    <h2>Upcoming Events</h2>
+    <div>
+      <button onclick="filterEvents('all')">All</button>
+      <button onclick="filterEvents('tech')">Tech</button>
+      <button onclick="filterEvents('cultural')">Cultural</button>
+      <button onclick="filterEvents('sports')">Sports</button>
+    </div>
+    <ul id="event-list">
+      <li class="event tech">💡 Hackathon</li>
+      <li class="event cultural">🎶 Music Fest</li>
+      <li class="event sports">🏆 Inter-College Football</li>
+      <li class="event tech">🤖 Robotics Workshop</li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <h3 onclick="toggleFAQ(this)">How to join a club? ➕</h3>
+      <p class="answer">Contact the Student Activities Office or club heads during the orientation fair.</p>
+    </div>
+    <div class="faq-item">
+      <h3 onclick="toggleFAQ(this)">Where is the library? ➕</h3>
+      <p class="answer">The library is located near the main academic block and open till 9 PM.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vibe Campus</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
